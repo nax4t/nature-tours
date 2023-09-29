@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass-compile": "sass src/style.scss -w -o dist/style.css"
+    "compile:sass": "node-sass scss/main.scss css/style.css -w"
   },
   "keywords": [],
   "author": "",

@@ -1,0 +1,45 @@
+.row {
+    max-width: $grid-width;
+
+    // Centering a block inside another block
+    margin: 0 auto;
+    
+    &:not(:last-child) {
+        margin-bottom: $gutter-vertical;
+    }
+
+    @include clearfix;
+
+    // selects the classes which start with col- & if I want to select the classes that contain rather than start with, I'll use the * operator & to select any class that ends with col-. We will be using $ sign.
+    [class^="col-"] {
+        float: left;
+
+        &:not(:last-child) {
+            margin-right: $gutter-horizotal;
+        }
+    }
+
+    .col-1-of-2 {
+        width: calc((100% - #{$gutter-horizotal}) / 2);
+    }
+
+    .col-1-of-3 {
+        width: calc((100% - 2 * #{$gutter-horizotal}) / 3);
+    }
+
+    .col-1-of-4 {
+        width: calc((100% - 3 * #{$gutter-horizotal}) / 4);
+    }
+
+    .col-2-of-3 {
+        width: calc((2 * (100% - 2 * #{$gutter-horizotal}) / 3) + #{$gutter-horizotal});
+    }
+
+    .col-2-of-4 {
+        width: calc(2* ((100% - 3 * #{$gutter-horizotal}) / 4) + #{$gutter-horizotal});
+    }
+
+    .col-3-of-4 {
+        width: calc(3 * ((100% - 3 * #{$gutter-horizotal}) / 4) + 2 * (#{$gutter-horizotal}));
+    }
+}
