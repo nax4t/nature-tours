@@ -1,0 +1,51 @@
+.footer {
+    background-color: #000000d2;
+    padding: 100px 0;
+    font-size: 14px;
+
+    &__logo-box {
+        text-align: center;
+        margin-bottom: 80px;
+    }
+
+    &__logo {
+        width: 150px;
+        height: auto;
+    }
+
+    &__navigation {
+        padding: 2rem;
+        border-top: 1px solid #807d7dd3;
+        display: inline-block;
+    }
+
+    &__list {
+        list-style: none;
+    }
+
+    &__item {
+        display: inline-block;
+
+        &:not(:last-child) {
+            margin-right: 15px;
+        }
+    }
+
+    &__link {
+        &:link,
+        &:visited {
+            color: #f7f7f7;
+            text-decoration: none;
+            text-decoration: none;
+            text-transform: uppercase;
+            display: inline-block;
+        }
+
+        &:hover,
+        &:active {
+            color: $color-primary;
+            box-shadow: 0 10px 20px rgba($color-black, .3);
+            transform: rotate(5deg) scale(1.3);
+        }
+    }
+}

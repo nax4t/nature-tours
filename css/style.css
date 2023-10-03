@@ -572,3 +572,34 @@ body {
 
 .form__radio-input:checked ~ .form__radio-label .form__radio-button::after {
   opacity: 1; }
+
+.footer {
+  background-color: #000000d2;
+  padding: 100px 0;
+  font-size: 14px; }
+  .footer__logo-box {
+    text-align: center;
+    margin-bottom: 80px; }
+  .footer__logo {
+    width: 150px;
+    height: auto; }
+  .footer__navigation {
+    padding: 2rem;
+    border-top: 1px solid #807d7dd3;
+    display: inline-block; }
+  .footer__list {
+    list-style: none; }
+  .footer__item {
+    display: inline-block; }
+    .footer__item:not(:last-child) {
+      margin-right: 15px; }
+  .footer__link:link, .footer__link:visited {
+    color: #f7f7f7;
+    text-decoration: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block; }
+  .footer__link:hover, .footer__link:active {
+    color: #55c57a;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transform: rotate(5deg) scale(1.3); }
